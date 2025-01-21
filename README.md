@@ -1,3 +1,3 @@
-### Projeto para o instituto evoluir 
+# Projeto para o instituto evoluir 
 ## Uma landing page de um site de academia
-# Simples mas bem feito
+### Simples mas bem feito
