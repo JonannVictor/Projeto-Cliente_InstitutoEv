@@ -28,10 +28,30 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Mensagem enviada com sucesso!');
             form.reset();
         });
+
+        const inputs = form.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.checkValidity()) {
+                    this.classList.remove('invalid');
+                    this.classList.add('valid');
+                } else {
+                    this.classList.remove('valid');
+                    this.classList.add('invalid');
+                }
+            });
+        });
     }
 
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
     }
+
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    menuToggle.addEventListener('click', function() {
+        navList.classList.toggle('active');
+    });
 });
