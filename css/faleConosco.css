@@ -5,44 +5,42 @@
 }
 
 body {
-    background-image: url('https://wallpapercave.com/wp/wp11588751.jpg'); /* Adicionado fundo com imagem */
+    background-image: url('https://wallpapercave.com/wp/wp11588751.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     color: #333;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Adicionado para dar espaço ao cabeçalho fixo */
 }
 
 .contact-container {
     padding: 50px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 100%;
     max-width: 800px;
-    margin: 100px auto; /* Ajustado para dar espaço ao cabeçalho fixo */
+    margin: 100px auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.nav {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    font-size: 30px;
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
 
-.active {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: rgb(0, 204, 255);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.nav {
+    position: fixed; /* Fixar o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo sólido */
+    padding: 10px 0;
+    z-index: 1000; /* Garantir que o cabeçalho fique acima de outros elementos */
 }
 
 a {
@@ -51,19 +49,14 @@ a {
 }
 
 .nav a:hover {
-    border: none;
-    font-size: 31px;
+    color: rgb(0, 204, 255);
     transition: 0.3s;
 }
 
 .active {
-    color: inherit;
+    color: rgb(0, 204, 255);
     text-decoration: underline;
-    text-decoration-skip-ink: auto;
-    text-decoration-color: rgb(0, 204, 255);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-underline-offset: 5px;
 }
 
 form {

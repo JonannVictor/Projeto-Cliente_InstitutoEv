@@ -59,6 +59,7 @@ a {
     font-size: 60px;
     line-height: 1;
     font-family: 'League Spartan', sans-serif;
+    animation: fadeIn 2s ease-in-out; /* Aplicar animação */
 }
 
 .container {
@@ -68,6 +69,7 @@ a {
     bottom: 100px;
     left: 100px;
     gap: 30px;
+    animation: fadeIn 2s ease-in-out; /* Aplicar animação */
 }
 
 .container button {
@@ -99,6 +101,7 @@ a {
     top: 50%;
     transform: translateY(-50%);
     right: 100px;
+    animation: fadeIn 2s ease-in-out; /* Aplicar animação */
 }
 
 .buttons img {
@@ -113,6 +116,15 @@ a {
     width: 44px;
     height: 44px;
     transition: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
