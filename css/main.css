@@ -114,6 +114,7 @@ a {
     height: 44px;
     transition: 0.3s;
 }
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -133,6 +134,6 @@ a {
     .container button {
         width: 100%;
         padding: 10px;
-        font-size:  10px;
+        font-size: 10px;
     }
 }

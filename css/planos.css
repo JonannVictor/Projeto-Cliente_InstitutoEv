@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/834258.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.nav {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(195, 195, 195);
+}
+
+.nav a:hover {
+    border: none;
+    font-size: 31px;
+    transition: 0.3s;
+}
+
+.active {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: rgb(0, 204, 255);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.planos-container {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Adicionado para contraste */
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plano {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plano h2 {
+    margin-bottom: 10px;
+}
+
+.plano p {
+    margin-bottom: 20px;
+}
+
+.plano button {
+    background-color: rgb(0, 204, 255);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plano button:hover {
+    background-color: rgb(0, 160, 200);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 80%;
+    }
+}
